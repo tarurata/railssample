@@ -22,6 +22,10 @@ test:
 
 production:
   <<: *default
+  adaper: mysql2
+  encoding: utf8
+  pool: 5
   database: railssample_production
   username: root
   password:
+  socket: /var/lib/mysql/mysql.sock
